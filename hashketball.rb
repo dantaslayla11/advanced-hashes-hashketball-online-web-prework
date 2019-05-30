@@ -166,7 +166,7 @@ def player_with_longest_name
   game_hash.each do |k,v|
     v[:players].each do |k1,v1|
       current_name_length = k1.length
-      if (current_name_length>=player_name_length)
+      if (current_name_length>player_name_length)
         player_name_length = current_name_length
         player = k1
       end
